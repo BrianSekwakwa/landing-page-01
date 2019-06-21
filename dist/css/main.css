@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Yesteryear&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
+
+header {
+  background: url("../img/background-image.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color; }
+
+.toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1rem; }
+  @media screen and (min-width: 768px) {
+    .toggle {
+      display: none; } }
+  .toggle div {
+    background-color: #ffffff;
+    width: 2rem;
+    height: 0.25rem;
+    margin: 0.25rem; }
+
+.navigation {
+  background: transparent;
+  height: 10vh;
+  color: #fff; }
+  .navigation__logo {
+    display: inline-block;
+    padding-top: 0.35rem;
+    padding-left: 2rem;
+    font-family: "Yesteryear", cursive;
+    font-size: 2.5rem; }
+  .navigation__links {
+    padding-top: 1.35rem;
+    display: none;
+    float: right;
+    padding-right: 2rem; }
+    @media screen and (min-width: 768px) {
+      .navigation__links {
+        display: block; } }
+    .navigation__links a {
+      text-decoration: none;
+      transition: all 0.35s ease-in-out;
+      color: #fff; }
+      .navigation__links a li {
+        display: inline;
+        margin: 0 1.5rem; }
+      .navigation__links a:hover {
+        color: yellow; }
+
+.background {
+  height: calc(100vh - 10vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff; }
+  .background__lead {
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-align: center; }
+    .background__lead--bold {
+      font-weight: bold; }
+    @media screen and (min-width: 768px) {
+      .background__lead {
+        font-size: 1.4rem; } }
+  .background__button {
+    margin-top: 3rem; }
+    .background__button button {
+      width: 14rem;
+      height: 3rem;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      background: transparent;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.35s ease-in-out; }
+      .background__button button:hover {
+        border-color: yellow;
+        color: yellow; }
+      @media screen and (min-width: 768px) {
+        .background__button button {
+          width: 18rem;
+          height: 3rem;
+          font-size: 1.2rem; } }

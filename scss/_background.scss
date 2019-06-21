@@ -1,0 +1,49 @@
+.background {
+  height: calc(100vh - 10vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+
+  &__lead {
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    @include medium {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__button {
+    margin-top: 3rem;
+
+    & button {
+      width: 14rem;
+      height: 3rem;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      background: transparent;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.35s ease-in-out;
+
+      &:hover {
+        border-color: yellow;
+        color: yellow;
+      }
+
+      @include medium {
+        width: 18rem;
+        height: 3rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
